@@ -216,7 +216,8 @@
     <div class="container">
         <div class="text-center">
             <h2 class="section-heading text-uppercase" href="#work">My works</h2>
-            <h3>이번 학기동안 한 과제들입니다.</h3>
+            <h3>이번 학기동안 한 과제들입니다. 링크를 클리하셔서 들어가보세요!</h3>
+
             <hr>
         </div>
 
@@ -360,49 +361,66 @@
 
          <!-- favorites Section-->
         <section class="page-section bg-light" id="favorites">
-            <div class="container">
-                <div class="text-center">
-                    <h2 class="section-heading text-uppercase">My favorites</h2>
-                    <hr>
-                    <br>
+    <div class="container">
+        <div class="text-center">
+            <h2 class="section-heading text-uppercase">My favorites</h2>
+            <hr>
+            <br>
+        </div>
+        <div id="favoritesCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#favoritesCarousel" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#favoritesCarousel" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#favoritesCarousel" data-bs-slide-to="2"></button>
+                <button type="button" data-bs-target="#favoritesCarousel" data-bs-slide-to="3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="mx-auto rounded-circle" src="assets/img/team/kkamo.jpg" alt="까미" />
+                    <div class="carousel-caption">
+                        <h4>까미</h4>
+                        <p>저희 강아지입니다. 까미는 치와와이고 소형견이지만 벌써 7kg이 넘습니다.</p>
+                        <p>까미를 만지면 말랑말랑해서 기분이 좋아집니다.</p>
+                    </div>
                 </div>
-                <div class="row">
-                    <div class="col-lg-3">
-                        <div class="team-member">
-                            <img class="mx-auto rounded-circle" src="assets/img/team/kkamo.jpg" alt="..." />
-                            <h4>까미</h4>
-                            <p class="text-muted">저희 강아지입니다. 까미는 치와와이고 소형견이지만 벌써 7kg이 넘습니다. 까미를 만지면
-                            말랑말랑해서 기분이 좋아집니다.</p>
-                        </div>
+                <div class="carousel-item">
+                    <img class="mx-auto rounded-circle" src="assets/img/team/rigs.jpg" alt="악세서리" />
+                    <div class="carousel-caption">
+                        <h4>악세서리</h4>
+                        <p>저는 반지 모으는 것을 좋아합니다. 성인이 되고 팔찌도 껴보고 귀걸이도 해보고 각종 악세서리를 착용해봤지만</p>
+                        <p>그중에서 가장 실용적이게 착용할 수 있어 취미가 되었습니다.</p>
                     </div>
-                    <div class="col-lg-3">
-                        <div class="team-member">
-                            <img class="mx-auto rounded-circle" src="assets/img/team/rigs.jpg" alt="..." />
-                            <h4>악세서리</h4>
-                            <p class="text-muted">저는 반지 모으는 것을 좋아합니다. 성인이 되고 팔찌도 껴보고 귀걸이도 해보고
-                            각종 악세서리를 착용해봤지만 그중에서 가장 실용적이게 착용할 수 있어 취미가 되었습니다.</p>
-                            </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="mx-auto rounded-circle" src="assets/img/team/nailart.jpg" alt="네일아트" />
+                    <div class="carousel-caption">
+                        <h4>네일아트</h4>
+                        <p>성인이 되었을때 가장 하고 싶던 것 중 하나였습니다. 한번 시작하고 나니 </p>
+                        <P>그 만족감을 못 잊어 한달에 한번씩 네일아트를 받으러 다녔습니다.</P>
                     </div>
-                    <div class="col-lg-3">
-                        <div class="team-member">
-                            <img class="mx-auto rounded-circle" src="assets/img/team/nailart.jpg" alt="..." />
-                            <h4>네일아트</h4>
-                            <p class="text-muted">성인이 되었을때 가장 하고 싶던 것 중 하나였습니다. 한번 시작하고 나니
-                            그 만족감을 못 잊어 한달에 한번씩 네일아트를 받으러 다녔습니다.</p>
-                            </div>
-                    </div>
-
-                     <div class="col-lg-3">
-                        <div class="team-member">
-                            <img class="mx-auto rounded-circle" src="assets/img/team/cafe.jpg" alt="..." />
-                            <h4>카페</h4>
-                            <p class="text-muted">저는 카페가는 것을 굉장히 좋아합니다. 전에는 그냥 커피를 마시러 갔다면
-                            지금은 쉬러도 가고 공부도 하고 그런 공간으로 저에게 다가오게 되었습니다.</p>
-                            </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="mx-auto rounded-circle" src="assets/img/team/cafe.jpg" alt="카페" />
+                    <div class="carousel-caption">
+                        <h4>카페</h4>
+                        <p>저는 카페가는 것을 굉장히 좋아합니다. 전에는 그냥 커피를 마시러 갔다면</p>
+                        <p> 지금은 쉬러도 가고 공부도 하고 그런 공간으로 저에게 다가오게 되었습니다.</p>
                     </div>
                 </div>
             </div>
-        </section>
+            <a class="carousel-control-prev" href="#favoritesCarousel" role="button" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#favoritesCarousel" role="button" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </a>
+        </div>
+    </div>
+</section>
+
+
 
 
 
